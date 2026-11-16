@@ -1,0 +1,13 @@
+﻿NetPulse report period,2026-10-16T07:22:03.943344Z,2026-11-15T07:22:03.943344Z
+record_type,device_ip,hostname,mac_address,observed_at,observation,latency_ms,packet_loss_percent,port,port_state,service_name,recommendation
+device,192.168.1.1,,d8:76:ae:31:cb:f8,2026-11-15T07:21:57.595439Z,responding,1.0,,,,,
+device,192.168.1.35,Fame,,2026-11-15T07:21:57.643657Z,responding,1.0,,,,,
+ping_test,192.168.1.35,,,2026-11-15T07:21:34.339905Z,responding,1.0,0.0,,,,
+ping_test,192.168.1.1,,,2026-11-15T07:21:31.555839Z,responding,1.25,0.0,,,,
+security_finding,192.168.1.1,,,2026-11-15T07:21:43.475315Z,not_open,,,21,filtered_or_timeout,FTP,
+security_finding,192.168.1.1,,,2026-11-15T07:21:43.475315Z,not_open,,,22,filtered_or_timeout,SSH,
+security_finding,192.168.1.1,,,2026-11-15T07:21:43.475315Z,not_open,,,23,filtered_or_timeout,Telnet,
+security_finding,192.168.1.1,,,2026-11-15T07:21:43.475315Z,not_open,,,80,filtered_or_timeout,HTTP,
+security_finding,192.168.1.1,,,2026-11-15T07:21:43.475315Z,open,,,443,open,HTTPS,An HTTP service is accepting connections. Confirm that the expected application is running and that it is kept up to date.
+security_finding,192.168.1.1,,,2026-11-15T07:21:43.475315Z,not_open,,,3389,filtered_or_timeout,RDP,
+recommendation,,,,2026-11-15T07:22:03.988711Z,info,,,,,DIAG-NO-DATA,"No rule-triggering measurements have been recorded. Run a discovery scan, ping a device and start monitoring. Recommendations appear only when recorded observations match a documented rule."
